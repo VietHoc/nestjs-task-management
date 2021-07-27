@@ -22,7 +22,7 @@ import { configValidationSchema } from './config.schema';
 
         return {
           ssl: isProduction,
-          extras: {
+          extra: {
             ssl: isProduction ? { rejectUnauthorized: false } : null,
           },
           type: 'postgres',
